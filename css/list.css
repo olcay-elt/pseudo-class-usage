@@ -1,0 +1,29 @@
+*{
+font-family: 'DynaPuff',cursive;
+}
+.list .aktif{
+    background-color:rgb(133, 123, 123) ;
+}
+.menu li{
+    background-color: bisque;
+    color: crimson;
+}
+/*li lere */
+a{
+    color: rgb(103, 90, 197);
+}
+.aktif:hover{
+    background-color: blueviolet;
+}
+li:hover{
+    background-color: cadetblue;
+    color: aqua;
+}
+a:hover{
+    color: rgb(173, 173, 238);
+}
+/* hover gibi pseudo classlar solundaki elemente bitişik yazılır, 2 ve daha fazla class ismini aynı anda yazacaksak aralarında boşluk almalı */
+.list{
+    list-style-position: inside;
+    list-style-type: "🌿";
+}

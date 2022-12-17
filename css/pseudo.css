@@ -1,0 +1,82 @@
+table {
+    border-collapse: collapse;
+}
+
+.liste tr:nth-child(odd) {
+    background-color: pink;
+    color: aqua;
+}
+
+.liste tr:nth-child(3) {
+    background-color: bisque;
+}
+
+.liste td:first-child {
+    font-weight: 900;
+    color: cornflowerblue;
+}
+
+.liste td:last-child {
+    color: darkcyan;
+    font-style: italic;
+}
+
+td:hover {
+    background-color: chartreuse;
+}
+
+/*  alttaki gibi, tr lere özel stil eklediğimiz için tr hover kullanırken spesific class adı kullandık */
+/*! row lara hover olunca stil vermek istiyorsam, kimseye spesific stil vermemiş olmam gerekir, verdiysem ona da spesific davranmalıyım */
+.liste tr:hover {
+    background-color: gray;
+}
+
+#sepet {
+    color: rgb(156, 29, 55);
+    font-size: 40px;
+}
+
+a {
+    color: coral;
+}
+
+a:visited {
+    color: rgb(36, 219, 158);
+
+}
+
+/*ziyaret edilen sitenin rengi degisiyor*/
+
+a:active {
+    color: cadetblue;
+}
+
+/*kutucugu tiklayinca renk degisiyor*/
+
+a:hover {
+    background-color: rgb(212, 137, 212);
+    font-size: 30px;
+}
+
+.liste tr:nth-child(3)::after,
+.liste tr:nth-child(3)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content: "🌟";
+}
+
+.liste tr::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "🌟";
+    color: red;
+    font-size: 30px;
+}
+
+.liste tr::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "🌟";
+    color: red;
+    font-size: 30px;
+}

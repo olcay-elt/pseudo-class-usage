@@ -1,0 +1,45 @@
+  /* margin leri 0 larsak % ve viewport ölçüleri hemen hemen aynı görünür. sadece % parent ına göre şekillenir yani parent 500px olsun child a 50% dersek 250px olur. ama parent 500px iken child a 50vw dersek tüm ekranın (mesela 100 px lik bir ekransa) yarısını alır, parent ın ne olduğuyla ilgilenmez. margin 0 lamazsak 50%, kullanılan ekranın (margin lerden arta kalan ekranın) yarısını alır, 50vw ise tüm ekranın yarısını alır. mesela ekran 1000px olsun marginler 50-50 100 olsun, % ifadesi kalan 900 ün yüzdesini alır, vw ifadesi 1000px in yüzdesini alır  */
+
+.dede{
+    background-color: rgb(18, 231, 231);
+    width: 50%;
+    height: 50vh;
+}
+.baba{
+    background-color: blue;
+    width: 50%;
+    height: 50vh;
+}
+.torun{
+    background-color: cornflowerblue;
+    width: 50vw;
+    height: 50%;
+}
+/*! viewport ölçüleri parenttan bağımsız çalışır(vw=width, vh=height). % ölçü birimi element in kapsaması gereken ölçüye göre çalışır mesela bir div ne kadar yer kaplayacaksa 50% ile onun yarısını alırsınız, yada parent a bir height width verdiniz, ona göre şekillenir. px ve % =margin lerden arta kalan yeri anlar, viewport bütün ekranı (50vw=ekranın yüzde 50 si) */
+/*! %=görünen ekranın yüzdesini alır, vw= tüm ekranın yüzdesini alır */
+/*! viewport ölçüleri parenttan bağımsız çalışır(vw=width, vh=height). % ölçü birimi element in kapsaması gereken ölçüye göre çalışır mesela bir div ne kadar yer kaplayacaksa 50% ile onun yarısını alırsınız, yada parent a bir height width verdiniz, ona göre şekillenir. px ve % =margin lerden arta kalan yeri anlar, viewport bütün ekranı (50vw=ekranın yüzde 50 si) */
+/*! %=görünen ekranın yüzdesini alır, vw= tüm ekranın yüzdesini alır */
+.anane{
+    color: crimson;
+    font-size: 3em;
+    /*1em=16px*/
+}
+.anne{
+    font-size: 0.5em;
+}
+.cocuk{
+    font-size: 6em;
+}
+  /*!child daki 2em, parent ın 2 katı demek, 0.5 dersek yarısı */
+  /*! rem için parent child yok herkes ana öğeye göre default 16px */
+
+  .tek{
+    font-size: 5em;
+  }
+  .div1{
+font-size: 2rem;
+/*2rem=16*2=32px*/
+  }
+  .div2{
+    font-size: 2rem;
+  }
